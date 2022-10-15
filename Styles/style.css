@@ -4,3 +4,24 @@
     box-sizing: border-box;
 }
 
+.main-top-header {
+    background-color: #001f5b;
+    padding: 10px;
+}
+
+.main-top-header .container {
+   display: flex;
+   justify-content: space-around;
+   color: #fff;
+}
+
+.container .blocks {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.container .blocks a{
+    color: #fff;
+    text-decoration: none;
+}
