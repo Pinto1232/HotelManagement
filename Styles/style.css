@@ -1,27 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Oxygen', sans-serif;
+}
+
 .main-top-header {
     background-color: #001f5b;
-    padding: 10px;
+    padding: 15px;
 }
 
 .main-top-header .container {
    display: flex;
    justify-content: space-around;
+   align-items: center;
    color: #fff;
 }
 
 .container .blocks {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 20px;
 }
 
 .container .blocks a{
     color: #fff;
     text-decoration: none;
+}
+
+.WhatsApp-number span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.login span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #a9c6ff54;
+    padding: 6px;
+    border-radius: 10px;
+    width: 130%;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
 }
