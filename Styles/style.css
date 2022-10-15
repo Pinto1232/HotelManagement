@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
 
 *{
     margin: 0;
@@ -10,6 +10,7 @@ body{
     font-family: 'Oxygen', sans-serif;
 }
 
+/* Top heade component */
 .main-top-header {
     background-color: #001f5b;
     padding: 15px;
@@ -58,3 +59,4 @@ body{
     justify-content: center;
     cursor: pointer;
 }
+/* End of top header component */
