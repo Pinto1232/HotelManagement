@@ -235,21 +235,22 @@ body {
 }
 
 .dropdown-menu {
-    background-color: rgb(95, 95, 95);
+    background-color: #fff;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 0px;
     position: absolute;
     left: 0;
     opacity: 0;
-    text-align: center;
+    text-align: start;
     top: 0;
     visibility: hidden;
     z-index: -99999;
+    text-transform: capitalize;
 }
 
 .dropdown-menu li:first-child {
-    cursor: default;
+    cursor: pointer;
 }
 
 .dropdown-menu a {
@@ -259,11 +260,15 @@ body {
     text-decoration: none;
     -webkit-transition: all 1s;
     transition: all 1s;
+    width: max-content;
 }
 
 .dropdown-menu a:hover {
-    background: #fff;
+    background: rgba(78, 78, 78, 0.066);
     color: #000;
+    padding: 3px;
+    width: 100%;
+    padding: 2px;
 }
 
 .dropdown span {
