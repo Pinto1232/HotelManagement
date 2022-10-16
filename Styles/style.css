@@ -31,7 +31,15 @@ body {
 }
 
 .links {
-    font-size: 15px;
+    font-size: 17px;
+}
+
+.links img {
+    width: 40px;
+}
+
+.core_lines {
+    color: #385691;
 }
 
 .container .blocks a {
@@ -123,7 +131,7 @@ body {
     font: 900;
     text-transform: uppercase;
     font-size: 41px;
-    color: #001f5b;
+    color: #38414d;
     margin-bottom: 8px;
 }
 
@@ -189,11 +197,138 @@ body {
     display: flex;
     background-color: #fff;
     min-width: 80%;
-    height: 56px;
-    border-radius: 10px;
+    height: 86px;
+    border-radius: 0px 0px 10px 10px;
     padding: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+
+.mega-search .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mega-search .search-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* dropdown */
+.dropdown {
+    background: #fff;
+    color: #001f5b;
+    cursor: pointer;
+    height: 50px;
+    line-height: 40px;
+    position: relative;
+    width: 200px;
+    text-decoration: none;
+    z-index: 1;
+    border-bottom: 1px solid #38414d;
+}
+
+.mega-search .tiny-header {
+    color: #38414d52;
+    padding-top: 8px;
+}
+
+.dropdown-menu {
+    background-color: rgb(95, 95, 95);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+    top: 0;
+    visibility: hidden;
+    z-index: -99999;
+}
+
+.dropdown-menu li:first-child {
+    cursor: default;
+}
+
+.dropdown-menu a {
+    color: #000;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.dropdown-menu a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.dropdown span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown:hover .dropdown-menu {
+    background: #fff;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    width: 100%;
+    -webkit-transition: all .5s, background, 2s .5s linear;
+    transition: all .5s, background 2s .5s linear;
+}
+
+.btn {
+    padding: 9px 32px;
+    background: white;
+    max-width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.btn-book {
+    background-color: #001f5b;
+    color: white;
+}
+
+.btn-book:hover {
+    background-color: #38414d;
+}
+
+
+.btn-icon {
+    margin-left: 10px;
+    gap: 14px;
+}
+
+.btn:hover {
+    border-color: #1150EF;
+    cursor: pointer;
+}
+
+/* end dropdown */
+/* End mega-search */
+
+
+/* Line row */
+.line-row .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px;
+    background-color: #38414d;
+    color: white;
+}
+
+/* End Line row */
 
 /* End Mega search */
 
