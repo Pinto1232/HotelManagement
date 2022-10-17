@@ -104,7 +104,7 @@ const houseTypes = [
 ]
 
 const apartTypes = document.getElementsByClassName('apart_types')[0]
-console.log("Apartment", apartTypes);
+/* console.log("Apartment", apartTypes); */
 
 
 houseTypes.forEach((product, index) => {
