@@ -35,7 +35,7 @@ body {
 }
 
 .links img {
-    width: 40px;
+    width: 72px;
 }
 
 .core_lines {
@@ -192,7 +192,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f7f7f7;
-    height: 82px;
+    height: 157px;
 }
 
 .mega-search .search-content {
@@ -237,10 +237,10 @@ body {
 }
 
 .dropdown-menu {
-    background-color: transparent;
+    background-color: #f7f7f7;
     list-style-type: none;
     margin: 10px;
-    padding: 0px;
+    padding: 30px;
     position: absolute;
     left: 0;
     opacity: 0;
@@ -278,7 +278,7 @@ body {
 }
 
 .dropdown:hover .dropdown-menu {
-    background: transparent;
+    background: white;
     opacity: 1;
     visibility: visible;
     top: 100%;
@@ -342,17 +342,17 @@ body {
 
 /* Modal */
 .modal-container {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
-    align-items: center;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
+  background-color: rgba(0, 0, 0, 0.476);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal-container.show {
@@ -361,14 +361,50 @@ body {
 }
 
 .modal {
-    background-color: #fff;
-    text-align: start;
-    height: 80vh;
-    width: 80vw;
-    max-width: 100%;
-    padding: 20px;
-    opacity: 0;
-    pointer-events: none;
+   background-color: white;
+   padding: 30px 40px;
+   width: 600px;
+   max-width: 100%;
+   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.modal h1{
+    margin: 0;
+    margin-bottom: 5px;
+    color: #001f5b;
+}
+
+.modal p{
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.modal .input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #001f5b;
+    outline: none;
+}
+
+.modal .btn-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #001f5b;
+    color: white;
+    width: 20%;
+    margin-top: 2em;
+}
+
+.modal  .fa-times{
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    margin-left: 4px;
+    font-size: 17px;
 }
 
 /*End Modal */
