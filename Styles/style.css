@@ -394,7 +394,7 @@ body {
     width: 100%;
     height: 40px;
     border: none;
-    border-bottom: 1px solid #001f5b;
+    border-bottom: 0.2px solid #001e5b65;
     outline: none;
 }
 
@@ -469,7 +469,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 29px;
-    color:#001f5b;
+    color: #001f5b;
+    text-transform: uppercase;
+    margin-top: 6px;
 }
 .weekdays div:hover{
     text-align: center;
@@ -576,7 +578,7 @@ body {
 }
 
 .google-store {
-    background: #252629;;
+    background: #252629;
     display: flex;
     align-items: center;
     gap: 9px;
@@ -588,17 +590,18 @@ body {
     background: #252629;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 9px;
     border: 1px solid;
     color: white;
 }
 .apple-store i {
-  font-size: 28px;
+  font-size: 20px;
 }
 
 
 .google-store i {
-    font-size: 28px;
+    font-size: 20px;
   }
 
 
@@ -614,7 +617,12 @@ body {
 .social-icon i:hover  {
   color: #38414d;
 }
-
+.numbers{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
 
 
 /* End Footer  */
