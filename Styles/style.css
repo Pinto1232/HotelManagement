@@ -38,7 +38,7 @@ body {
 }
 
 .links img {
-    width: 72px;
+    width: 50px;
 }
 
 .core_lines {
@@ -360,6 +360,7 @@ body {
   transition: opacity 400ms ease-in-out;
   top: 2000ms ease-in-out,
   transform 2000ms ease-in-out;
+  z-index: 999;
 }
 
 .modal-container.show {
@@ -512,3 +513,108 @@ body {
     cursor: pointer;
 }
 /* End Calendar */
+
+
+/* Footer  */
+.footer-section .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #001f5b;
+    color: white;
+    padding-top: 3em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.container .separator{
+    width: 80%;
+    background-color: #38414d;
+    height: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.items .top-link{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.items ul{
+    list-style: none;
+    margin-top: 2em;
+    line-height: 1.5;
+}
+.items ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.socials{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    background-color: #001f5b;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: white;
+}
+
+.store-app {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0.8em;
+}
+
+.google-store {
+    background: #252629;;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border: 1px solid;
+    color: white;
+}
+
+.apple-store {
+    background: #252629;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border: 1px solid;
+    color: white;
+}
+.apple-store i {
+  font-size: 28px;
+}
+
+
+.google-store i {
+    font-size: 28px;
+  }
+
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.social-icon i:hover  {
+  color: #38414d;
+}
+
+
+
+/* End Footer  */
