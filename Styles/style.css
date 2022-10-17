@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -153,15 +156,6 @@ body {
     font-size: 16px;
 }
 
-.items-block span {
-    display: flex;
-    justify-content: first baseline;
-    margin-top: 43%;
-    padding-top: 1px;
-    width: 100%;
-    height: 6px;
-    background-color: #001f5b;
-}
 
 .hotel-bg .container {
     display: flex;
@@ -170,18 +164,22 @@ body {
     justify-items: center;
 }
 
+.items-block {
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+}
+
 .hotel-bg .colunms .items-block {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     background-color: #fff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .colunms .items-block {
     display: flex;
-    margin-top: 3%;
+    margin-top: 3%; 
     width: 500px;
-    height: 220px;
 }
 
 /* End banner section */
@@ -285,6 +283,12 @@ body {
     width: 100%;
     -webkit-transition: all .5s, background, 2s .5s linear;
     transition: all .5s, background 2s .5s linear;
+}
+
+.apart_types {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -403,6 +407,11 @@ body {
     margin-top: 2em;
 }
 
+.modal .btn-close:hover{
+    background-color: #38414d;
+    border: none;
+}
+
 .modal  .fa-times{
     display: flex;
     align-items: center;
@@ -412,3 +421,94 @@ body {
 }
 
 /*End Modal */
+
+
+/* Calendar */
+.calendar {
+    width: 100%;
+    /* height: 52rem; */
+    background-color: white;
+}
+
+.month {
+    width: 100%;
+    height: 4rem;
+    background-color: #001f5b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    color: white;
+}
+
+.month i {
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    padding: 3px;
+    justify-content: center;
+    cursor: pointer;
+    color:#001f5b;
+}
+.month i:hover {
+    background-color: #38414d;
+    color: white;
+}
+
+.month p {
+    font-size: 0.9em;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+    color:#001f5b;
+}
+.weekdays div:hover{
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #001f5b;
+    padding: 5px;
+    margin-top: 3px;
+    transition: opacity 300ms ease-in-out;
+}
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 35px;
+    color: #001f5b;
+}
+
+.days.prev-date:hover{
+    background-color: #001f5b;
+    color: white;
+    width: 20px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 20%;
+    
+}
+.days .date-number:hover{
+    background-color: #001f5b;
+    color: white;
+    width: 25px;
+    text-align: center;
+    border-radius: 15px;
+    transition: opacity 300ms ease-in-out;
+    gap: 25px;
+    width: calc(40.rem/7);
+    cursor: pointer;
+}
+/* End Calendar */
