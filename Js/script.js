@@ -172,7 +172,7 @@ const about_links = [
 console.log(about_links);
 
 const about_us_links = document.getElementsByClassName('about_us')[0]
-console.log("About Us",  about_us_links); 
+console.log("About Us", about_us_links);
 
 
 about_links.forEach((links, index) => {
@@ -210,7 +210,7 @@ const INVESTOR_links = [
 console.log(INVESTOR_links);
 
 const InvestorsLink = document.getElementsByClassName('InvestorsLink')[0];
-console.log('Investor',InvestorsLink);
+console.log('Investor', InvestorsLink);
 
 INVESTOR_links.forEach((invest_product, index) => {
     let InvestorP = document.createElement('a');
@@ -245,7 +245,7 @@ const HELP_RESOURCES = [
     },
 ]
 
-console.log('Help resources',HELP_RESOURCES);
+console.log('Help resources', HELP_RESOURCES);
 const help_resources = document.getElementsByClassName('helpResources')[0];
 console.log(help_resources);
 
@@ -298,7 +298,7 @@ CLAIMS.forEach((claimsItem, index) => {
 
 
 /* offers */
-const  STAYDURATION = [
+const STAYDURATION = [
     {
         id: 0,
         label: '+1 night',
