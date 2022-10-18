@@ -359,7 +359,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* opacity: 0; */
+    /* opacity: 0;  */
     transition: opacity 400ms ease-in-out;
     top: 2000ms ease-in-out,
         transform 2000ms ease-in-out;
@@ -373,6 +373,8 @@ body {
     height: auto;
     z-index: 999;
 }
+
+
 
 .search_modal .search-input {
     width: 40vw;
