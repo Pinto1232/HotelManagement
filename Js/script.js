@@ -142,3 +142,196 @@ open.addEventListener('click', () => {
 close.addEventListener('click', () => {
     modal_container.classList.remove('show');
 })
+
+
+/* Sub-links */
+const about_links = [
+    {
+        id: 0,
+        label: 'Who Are We',
+    },
+    {
+        id: 1,
+        label: 'Hotel',
+    },
+
+    {
+        id: 2,
+        label: 'Governance',
+    },
+    {
+        id: 3,
+        label: 'Carrers',
+    },
+    {
+        id: 4,
+        label: 'Offers',
+    },
+]
+
+console.log(about_links);
+
+const about_us_links = document.getElementsByClassName('about_us')[0]
+console.log("About Us",  about_us_links); 
+
+
+about_links.forEach((links, index) => {
+    let item_Link = document.createElement('a');
+    let itemText_link = document.createTextNode(links.label);
+    item_Link.appendChild(itemText_link);
+    about_us_links.appendChild(item_Link)
+});
+
+
+
+/* Investors array */
+const INVESTOR_links = [
+    {
+        id: 0,
+        label: "Item name"
+    },
+    {
+        id: 1,
+        label: "Item name"
+    },
+    {
+        id: 2,
+        label: "Item name"
+    },
+    {
+        id: 3,
+        label: "Item name"
+    },
+    {
+        id: 4,
+        label: "Item name"
+    },
+]
+console.log(INVESTOR_links);
+
+const InvestorsLink = document.getElementsByClassName('InvestorsLink')[0];
+console.log('Investor',InvestorsLink);
+
+INVESTOR_links.forEach((invest_product, index) => {
+    let InvestorP = document.createElement('a');
+    let InvestorText = document.createTextNode(invest_product.label);
+    InvestorP.appendChild(InvestorText);
+    InvestorsLink.appendChild(InvestorP)
+})
+/* End Investors array */
+
+
+/* Help Resources */
+const HELP_RESOURCES = [
+    {
+        id: 0,
+        label: 'item name',
+    },
+    {
+        id: 1,
+        label: 'item name',
+    },
+    {
+        id: 2,
+        label: 'item name',
+    },
+    {
+        id: 3,
+        label: 'item name',
+    },
+    {
+        id: 4,
+        label: 'item name',
+    },
+]
+
+console.log('Help resources',HELP_RESOURCES);
+const help_resources = document.getElementsByClassName('helpResources')[0];
+console.log(help_resources);
+
+HELP_RESOURCES.forEach((resourceItems, index) => {
+    let resourcesP = document.createElement('a');
+    let resourceText = document.createTextNode(resourceItems.label);
+    resourcesP.appendChild(resourceText);
+    help_resources.appendChild(resourcesP);
+})
+/* End Help Resources */
+
+
+
+/* Claims */
+const CLAIMS = [
+    {
+        id: 0,
+        label: 'item name'
+    },
+    {
+        id: 1,
+        label: 'item name'
+    },
+    {
+        id: 2,
+        label: 'item name'
+    },
+    {
+        id: 3,
+        label: 'item name'
+    },
+    {
+        id: 4,
+        label: 'item name'
+    },
+]
+console.log('Claims', CLAIMS);
+
+const claims = document.getElementsByClassName('claims')[0];
+console.log(claims);
+
+CLAIMS.forEach((claimsItem, index) => {
+    let claimsP = document.createElement('a');
+    let claimsText = document.createTextNode(claimsItem.label);
+    claimsP.appendChild(claimsText);
+    claims.appendChild(claimsP);
+})
+/* End Claims */
+
+
+
+/* offers */
+const  STAYDURATION = [
+    {
+        id: 0,
+        label: '+1 night',
+    },
+    {
+        id: 1,
+        label: '+4 night',
+    },
+    {
+        id: 2,
+        label: '+8 night',
+    },
+    {
+        id: 3,
+        label: '+10 night',
+    },
+    {
+        id: 4,
+        label: '+31 night',
+    },
+]
+console.log(STAYDURATION);
+
+
+const StayDuration = document.getElementsByClassName('duration')[0];
+console.log('duration', StayDuration);
+
+STAYDURATION.forEach((durationItem, index) => {
+    let StayDurantionP = document.createElement('a');
+    let stayDurationText = document.createTextNode(durationItem.label);
+    StayDurantionP.appendChild(stayDurationText);
+    StayDuration.appendChild(StayDurantionP);
+})
+/*End offers */
+
+/* End Sub-links */
