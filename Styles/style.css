@@ -435,10 +435,30 @@ body {
 
 .beside-seide-bars{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     color: #000;
     text-align: start;
+    background-color: #38414d0d;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.radio-box {
+    display: flex;
+    align-items: center; 
+    gap: 14px;
+}
+.radio-box label{
+    font-size: 12px;
+    gap: 24px;
+}
+
+.radio-section{
+    gap: 10px;
+}
+.radio-section h5{
+    margin-bottom: 10px;
 }
 /*End Modal */
 
