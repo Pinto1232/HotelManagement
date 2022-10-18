@@ -3,6 +3,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -178,7 +179,7 @@ body {
 
 .colunms .items-block {
     display: flex;
-    margin-top: 3%; 
+    margin-top: 3%;
     width: 500px;
 }
 
@@ -346,49 +347,49 @@ body {
 
 /* Modal */
 .modal-container {
-  background-color: rgba(0, 0, 0, 0.476);
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 400ms ease-in-out;
-  top: 2000ms ease-in-out,
-  transform 2000ms ease-in-out;
-  z-index: 999;
+    background-color: rgba(0, 0, 0, 0.476);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 400ms ease-in-out;
+    top: 2000ms ease-in-out,
+        transform 2000ms ease-in-out;
+    z-index: 999;
 }
 
 .modal-container.show {
-  pointer-events: auto;
-  opacity: 1;
-  transition: transform 400ms cubic-bezier(0.18,0,.89,0.43,1.19);
+    pointer-events: auto;
+    opacity: 1;
+    transition: transform 400ms cubic-bezier(0.18, 0, .89, 0.43, 1.19);
 }
 
 .modal {
-   background-color: white;
-   padding: 30px 40px;
-   width: 600px;
-   max-width: 100%;
-   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: white;
+    padding: 30px 40px;
+    width: 600px;
+    max-width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.modal h1{
+.modal h1 {
     margin: 0;
     margin-bottom: 5px;
     color: #001f5b;
 }
 
-.modal p{
+.modal p {
     opacity: 0.7;
     margin-bottom: 20px;
 }
 
-.modal .input{
+.modal .input {
     display: flex;
     align-items: center;
     width: 100%;
@@ -398,7 +399,7 @@ body {
     outline: none;
 }
 
-.modal .btn-close{
+.modal .btn-close {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -408,12 +409,12 @@ body {
     margin-top: 2em;
 }
 
-.modal .btn-close:hover{
+.modal .btn-close:hover {
     background-color: #38414d;
     border: none;
 }
 
-.modal  .fa-times{
+.modal .fa-times {
     display: flex;
     align-items: center;
     margin-top: 4px;
@@ -453,8 +454,9 @@ body {
     padding: 3px;
     justify-content: center;
     cursor: pointer;
-    color:#001f5b;
+    color: #001f5b;
 }
+
 .month i:hover {
     background-color: #38414d;
     color: white;
@@ -473,7 +475,8 @@ body {
     text-transform: uppercase;
     margin-top: 6px;
 }
-.weekdays div:hover{
+
+.weekdays div:hover {
     text-align: center;
     border-radius: 15px;
     cursor: pointer;
@@ -483,7 +486,8 @@ body {
     margin-top: 3px;
     transition: opacity 300ms ease-in-out;
 }
-.days{
+
+.days {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -493,7 +497,7 @@ body {
     color: #001f5b;
 }
 
-.days.prev-date:hover{
+.days.prev-date:hover {
     background-color: #001f5b;
     color: white;
     width: 20px;
@@ -501,9 +505,10 @@ body {
     border-radius: 15px;
     cursor: pointer;
     padding: 20%;
-    
+
 }
-.days .date-number:hover{
+
+.days .date-number:hover {
     background-color: #001f5b;
     color: white;
     width: 25px;
@@ -514,11 +519,12 @@ body {
     width: calc(40.rem/7);
     cursor: pointer;
 }
+
 /* End Calendar */
 
 
 /* Footer  */
-.footer-section .container{
+.footer-section .container {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -529,7 +535,7 @@ body {
     margin-bottom: 0;
 }
 
-.container .separator{
+.container .separator {
     width: 80%;
     background-color: #38414d;
     height: 2px;
@@ -540,7 +546,7 @@ body {
     margin-right: 20px;
 }
 
-.items .top-link{
+.items .top-link {
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -548,20 +554,21 @@ body {
     text-transform: uppercase;
 }
 
-.items ul{
+.items ul {
     list-style: none;
     margin-top: 2em;
     line-height: 1.5;
 }
-.items ul li a{
+
+.items ul li a {
     color: white;
     text-decoration: none;
     line-height: 1.5;
 }
 
-.socials{
+.socials {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     background-color: #001f5b;
     padding-top: 2em;
@@ -595,14 +602,15 @@ body {
     border: 1px solid;
     color: white;
 }
+
 .apple-store i {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 
 .google-store i {
     font-size: 20px;
-  }
+}
 
 
 .social-icon {
@@ -614,10 +622,11 @@ body {
     font-size: 20px;
 }
 
-.social-icon i:hover  {
-  color: #38414d;
+.social-icon i:hover {
+    color: #38414d;
 }
-.numbers{
+
+.numbers {
     display: flex;
     align-items: center;
     justify-content: flex-start;

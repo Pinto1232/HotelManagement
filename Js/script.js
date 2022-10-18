@@ -114,7 +114,7 @@ console.log("Apartment", apartTypes);
 houseTypes.forEach((product, index) => {
     let itemP = document.createElement('a');
     let itemText = document.createTextNode(product.typeofHouse);
-    itemP.appendChild(itemText); 
+    itemP.appendChild(itemText);
     apartTypes.appendChild(itemP)
 });
 
