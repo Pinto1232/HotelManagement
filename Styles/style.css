@@ -856,6 +856,11 @@ body {
 .offer-packages .container .card-offers .card-content {
     padding: 10px;
 }
+.buy-now{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 
 .offer-packages .buy-now a {
     display: inline-flex;
