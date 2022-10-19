@@ -878,7 +878,7 @@ body {
 }
 
 .stars {
-    color: rgb(255, 255, 109);
+    color: #38414d;
     cursor: pointer;
 }
 
@@ -897,19 +897,32 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #38414d;
+    background-color: white;
     margin-top: 4em;
     margin-bottom: 4em;
-    height: 600px;
+    height: 400px;
     padding: 1em;
     gap: 20px;
+}
+
+.product-offers .headers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+.headers h2{
+    color: #001f5b;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 800;
 }
 
 .product-offers .card-products {
     background-color: white;
     width: 300px;
     height: 465px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+    box-shadow: 0 0px 9px 2px rgba(181, 181, 181, 0.202), 0 1px 1px -5px rgba(157, 157, 157, 0.309);
 }
 
 .product-offers img {

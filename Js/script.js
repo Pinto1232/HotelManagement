@@ -357,10 +357,41 @@ STAYDURATION.forEach((durationItem, index) => {
 
 
 /* Product Offers */
-let images = [
-   "assets/vocation1.jpg",
-   "assets/vocation2.jpg",
-   "assets/vocation3.jpg",
+const images = [
+    {
+        id: 0,
+        x: "assets/vocation1.jpg",
+    },
+    {
+        id: 1,
+        x: "assets/vocation2.jpg",
+    },
+    {
+        id: 2,
+        x: "assets/vocation3.jpg",
+    },
 ]
-console.log(images);
+
+/* const imagesArray = document.getElementsByClassName("img").src = images[0]
+
+images.forEach((imagesItem, index) => {
+    let ImagesP = document.createElement('img');
+    console.log(ImagesP);
+    let ImageText = document.createTextNode(imagesItem.x);
+    ImagesP.appendChild(ImageText);
+    imagesArray.appendChild(ImagesP);
+}); */
+
+
+
+const newArray= images.map((imagesItem, index) => {
+    let ImagesP = document.createElement('img');
+    console.log(ImagesP);
+    let ImageText = document.createTextNode(imagesItem.x);
+    ImagesP.appendChild(ImageText);
+    /* newArray.appendChild(ImagesP); */
+});
+/* console.log(newArray);  */
+
+
 /* End Product Offers */
