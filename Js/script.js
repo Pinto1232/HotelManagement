@@ -172,7 +172,7 @@ const about_links = [
 console.log(about_links);
 
 const about_us_links = document.getElementsByClassName('about_us')[0]
-console.log("About Us", about_us_links);
+/* console.log("About Us", about_us_links); */
 
 
 about_links.forEach((links, index) => {
@@ -210,7 +210,7 @@ const INVESTOR_links = [
 console.log(INVESTOR_links);
 
 const InvestorsLink = document.getElementsByClassName('InvestorsLink')[0];
-console.log('Investor', InvestorsLink);
+/* console.log('Investor', InvestorsLink); */
 
 INVESTOR_links.forEach((invest_product, index) => {
     let InvestorP = document.createElement('a');
@@ -247,7 +247,7 @@ const HELP_RESOURCES = [
 
 console.log('Help resources', HELP_RESOURCES);
 const help_resources = document.getElementsByClassName('helpResources')[0];
-console.log(help_resources);
+/* console.log(help_resources); */
 
 HELP_RESOURCES.forEach((resourceItems, index) => {
     let resourcesP = document.createElement('a');
@@ -285,7 +285,7 @@ const CLAIMS = [
 console.log('Claims', CLAIMS);
 
 const claims = document.getElementsByClassName('claims')[0];
-console.log(claims);
+/* console.log(claims); */
 
 CLAIMS.forEach((claimsItem, index) => {
     let claimsP = document.createElement('a');
@@ -324,7 +324,7 @@ console.log(STAYDURATION);
 
 
 const StayDuration = document.getElementsByClassName('duration')[0];
-console.log('duration', StayDuration);
+/* console.log('duration', StayDuration); */
 
 STAYDURATION.forEach((durationItem, index) => {
     let StayDurantionP = document.createElement('a');

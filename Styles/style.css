@@ -374,6 +374,12 @@ body {
     z-index: 999;
 }
 
+.mega-search-container.show {
+    pointer-events: auto;
+    opacity: 1;
+    transition: transform 400ms cubic-bezier(0.18, 0, .89, 0.43, 1.19);
+}
+
 
 
 .search_modal .search-input {
