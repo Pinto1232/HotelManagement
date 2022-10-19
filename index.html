@@ -37,8 +37,8 @@
         <!-- Block two -->
         <div class="blocks">
           <div class="search">
-            <span class="btn-search-open"
-              ><p>Search...</p>
+            <span id="btn-search-open" class="btn-search-open"
+              ><p class="text-search">Search...</p>
               <i class="fas fa-search fa-xl"></i
             ></span>
           </div>
@@ -225,9 +225,7 @@
             <h3>Book now</h3>
           </div>
           <div>
-            <a id="close" class="btn btn-close"
-              >Close<i class="fas fa-times"></i
-            ></a>
+            <a id="close" class="btn btn-close"><i class="fas fa-times"></i></a>
           </div>
         </div>
 
@@ -307,8 +305,11 @@
 
     <!-- Mega search bar -->
     <div id="mega_search_container" class="mega-search-container">
+      <span id="close_search" class="icons-section">
+        <a class="btn-serch-close" href="#"><i class="fas fa-times"></i></a>
+      </span>
       <div class="search_modal">
-        <div>
+        <div class="input-section">
           <input
             class="search-input"
             type="text"
@@ -316,13 +317,73 @@
           />
         </div>
         <div>
-          <a id="close_search" class="btn btn-search"
+          <a class="btn btn-search"
             ><i class="fa-solid fa-magnifying-glass"></i
           ></a>
         </div>
       </div>
     </div>
     <!-- End Mega search bar -->
+
+    <!-- Offers -->
+    <div class="offer-packages">
+      <div class="container">
+        <div>
+          <div class="card-offers">
+            <img src="./assets/img.jpg" alt="image-package" />
+            <h3>TinyText</h3>
+            <h2>Package Name</h2>
+
+            <div class="card-content">
+              <div class="tinyheading">
+                <p>Lorem ipsum dolor sit.</p>
+                <span>rating</span>
+              </div>
+              <div class="buy-now">
+                <a class="btn-buy-now" href="#">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card-offers">
+            <img src="./assets/img.jpg" alt="image-package" />
+            <h3>TinyText</h3>
+            <h2>Package Name</h2>
+
+            <div class="card-content">
+              <div class="tinyheading">
+                <p>Lorem ipsum dolor sit.</p>
+                <span>rating</span>
+              </div>
+              <div class="buy-now">
+                <a class="btn-buy-now" href="#">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card-offers">
+            <img src="./assets/img.jpg" alt="image-package" />
+            <h3>TinyText</h3>
+            <h2>Package Name</h2>
+
+            <div class="card-content">
+              <div class="tinyheading">
+                <p>Lorem ipsum dolor sit.</p>
+                <span>rating</span>
+              </div>
+              <div class="buy-now">
+                <a class="btn-buy-now" href="#">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Offers -->
 
     <!-- Footer -->
     <section class="footer-section">
@@ -341,7 +402,7 @@
 
         <div class="items">
           <div>
-            <a class="top-link" href="#">INVESTOR RELATIONS</a>
+            <a class="top-link" href="#">CONTACT US</a>
             <ul>
               <li>
                 <a class="InvestorsLink" href="#"></a>
@@ -354,7 +415,7 @@
         <!-- Resources -->
         <div class="items">
           <div>
-            <a class="top-link" href="#">HELPFUL RESOURCES</a>
+            <a class="top-link" href="#">Location</a>
             <ul>
               <li>
                 <a class="helpResources" href="#"></a>
@@ -366,7 +427,7 @@
         <!-- claims -->
         <div class="items">
           <div>
-            <a class="top-link" href="#">CLAIMS</a>
+            <a class="top-link" href="#">We accept</a>
             <ul>
               <li>
                 <a class="claims" href="#"></a>
