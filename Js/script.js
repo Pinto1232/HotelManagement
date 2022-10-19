@@ -354,3 +354,13 @@ STAYDURATION.forEach((durationItem, index) => {
 /*End offers */
 
 /* End Sub-links */
+
+
+/* Product Offers */
+let images = [
+   "assets/vocation1.jpg",
+   "assets/vocation2.jpg",
+   "assets/vocation3.jpg",
+]
+console.log(images);
+/* End Product Offers */
