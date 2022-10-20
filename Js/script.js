@@ -130,9 +130,6 @@ const open = document.getElementById('open');
 const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('close');
 
-/* console.log(open);
-console.log(modal_container);
-console.log(close); */
 
 
 open.addEventListener('click', () => {
@@ -352,46 +349,74 @@ STAYDURATION.forEach((durationItem, index) => {
     StayDuration.appendChild(StayDurantionP);
 })
 /*End offers */
-
 /* End Sub-links */
 
 
 /* Product Offers */
-const images = [
+const HolidaysPackages = [
     {
         id: 0,
-        x: "assets/vocation1.jpg",
+        images: "assets/vocation1.jpg",
+        holidayTitle: "Best family vocation in South Africa",
+        packagePrice: "R35000",
+        packageDescription: "This package is affordable for a family with 3 members only"
     },
     {
         id: 1,
-        x: "assets/vocation2.jpg",
+        images: "assets/vocation2.jpg",
+        holidayTitle: "Best family vocation in USA",
+        packagePrice: "R35000",
+        packageDescription: "This package is affordable for a family with 2 members only"
     },
     {
         id: 2,
-        x: "assets/vocation3.jpg",
+        images: "assets/vocation3.jpg",
+        holidayTitle: "Best family vocation in Europe",
+        packagePrice: "Eu35000",
+        packageDescription: "This package is affordable for a family with 2 members only"
+    },
+    {
+        id: 3,
+        images: "assets/vocation3.jpg",
+        holidayTitle: "Best family vocation in Angola",
+        packagePrice: "5300000AOA",
+        packageDescription: "This package is affordable for a family with 4 members only"
     },
 ]
 
-/* const imagesArray = document.getElementsByClassName("img").src = images[0]
+const myPackages = document.querySelector(".myPackages")
+console.log("div", myPackages);
 
-images.forEach((imagesItem, index) => {
-    let ImagesP = document.createElement('img');
-    console.log(ImagesP);
-    let ImageText = document.createTextNode(imagesItem.x);
-    ImagesP.appendChild(ImageText);
-    imagesArray.appendChild(ImagesP);
-}); */
+const showInHtml = HolidaysPackages.map((packagesItem, index) => {
+    return `
+            <div class="card-products">
+            <img class="img" src="${packagesItem.images}" id="images" alt="">
+            
+            <div class="package-title">
+            <h2>${packagesItem.holidayTitle}</h2>
+            </div>
 
+            <!-- Package price -->
+            <div class="package-price">
+            <p>${packagesItem.packagePrice}</p>
+            </div>
+            <!-- End Package price -->
+            
+            <!-- Package description -->
+            <div class="package-description">
+            <p>${packagesItem.packageDescription}</p>
+            </div>
+            <!-- End Package description -->
+            </div>
+ `
+})
 
-
-const newArray= images.map((imagesItem, index) => {
-    let ImagesP = document.createElement('img');
-    console.log(ImagesP);
-    let ImageText = document.createTextNode(imagesItem.x);
-    ImagesP.appendChild(ImageText);
-    /* newArray.appendChild(ImagesP); */
-});
-/* console.log(newArray);  */
-
-
+myPackages.innerHTML = showInHtml;
+console.log(showInHtml);
 /* End Product Offers */
+
+
+/*Merge apartmentType array and HolidaysPackages array*/
+
+const merge = [...new Set([...apartmentType, ...HolidaysPackages])];
+console.log("Merged arrays", merge);
