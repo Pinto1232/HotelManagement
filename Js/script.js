@@ -411,7 +411,7 @@ myPackages.innerHTML = showInHtml;
 /* Array of countries */
 const ALL_COUNTRIES = [
     {
-        id:0,
+        id: 0,
         contryName: "Angola",
         population: "32,000 000",
         provincies: "18",
@@ -422,7 +422,7 @@ const ALL_COUNTRIES = [
         short_video: "",
     },
     {
-        id:1,
+        id: 1,
         contryName: "South Africa",
         population: "50,000 000",
         provincies: "18",
@@ -434,7 +434,7 @@ const ALL_COUNTRIES = [
     },
 
     {
-        id:2,
+        id: 2,
         contryName: "United State of America",
         population: "78,000 000",
         provincies: "18",
@@ -445,7 +445,7 @@ const ALL_COUNTRIES = [
         short_video: "",
     },
     {
-        id:3,
+        id: 3,
         contryName: "Brasil",
         population: "32,000 000",
         provincies: "18",
@@ -457,7 +457,7 @@ const ALL_COUNTRIES = [
     },
 
     {
-        id:4,
+        id: 4,
         contryName: "Portugal",
         population: "70,000 000",
         provincies: "18",
@@ -469,7 +469,7 @@ const ALL_COUNTRIES = [
     },
 
     {
-        id:5,
+        id: 5,
         contryName: "China",
         population: "32,000 000",
         provincies: "18",
@@ -481,7 +481,7 @@ const ALL_COUNTRIES = [
     },
 
     {
-        id:6,
+        id: 6,
         contryName: "Spain",
         population: "32,000 000",
         provincies: "18",
@@ -492,7 +492,7 @@ const ALL_COUNTRIES = [
         short_video: "",
     },
     {
-        id:7,
+        id: 7,
         contryName: "England",
         population: "52,000 000",
         provincies: "18",
@@ -508,6 +508,6 @@ const ALL_COUNTRIES = [
 
 
 /*Merge apartmentType array and HolidaysPackages array*/
-const merge = [...new Set([...ALL_COUNTRIES,...apartmentType, ...apartmentType, ...HolidaysPackages, ...STAYDURATION, ...houseTypes])];
+const merge = [...new Set([...ALL_COUNTRIES, ...apartmentType, ...apartmentType, ...HolidaysPackages, ...STAYDURATION, ...houseTypes])];
 console.log("Merged arrays", merge);
 /* End mergin arrays */
