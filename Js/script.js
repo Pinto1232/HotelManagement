@@ -108,7 +108,7 @@ const houseTypes = [
 ]
 
 const apartTypes = document.getElementsByClassName('apart_types')[0]
-console.log("Apartment", apartTypes);
+/* console.log("Apartment", apartTypes); */
 
 
 houseTypes.forEach((product, index) => {
@@ -120,9 +120,9 @@ houseTypes.forEach((product, index) => {
 
 
 
-apartmentType.forEach(element => {
+/* apartmentType.forEach(element => {
     console.log(element);
-});
+}); */
 
 
 /* Modal */
@@ -146,9 +146,9 @@ const btnSearchOpen = document.getElementById('btn-search-open');
 const megaSearchContainer = document.getElementById('mega_search_container');
 const searchClose = document.getElementById('close_search');
 
-console.log("btn Open", btnSearchOpen);
+/* console.log("btn Open", btnSearchOpen);
 console.log("search container", megaSearchContainer);
-console.log("search close", searchClose);
+console.log("search close", searchClose); */
 
 btnSearchOpen.addEventListener('click', () => {
     megaSearchContainer.classList.add('show');
@@ -185,7 +185,7 @@ const about_links = [
     },
 ]
 
-console.log(about_links);
+/* console.log(about_links); */
 
 const about_us_links = document.getElementsByClassName('about_us')[0]
 /* console.log("About Us", about_us_links); */
@@ -223,7 +223,7 @@ const INVESTOR_links = [
         label: "Item name"
     },
 ]
-console.log(INVESTOR_links);
+/* console.log(INVESTOR_links); */
 
 const InvestorsLink = document.getElementsByClassName('InvestorsLink')[0];
 /* console.log('Investor', InvestorsLink); */
@@ -261,7 +261,7 @@ const HELP_RESOURCES = [
     },
 ]
 
-console.log('Help resources', HELP_RESOURCES);
+/* console.log('Help resources', HELP_RESOURCES); */
 const help_resources = document.getElementsByClassName('helpResources')[0];
 /* console.log(help_resources); */
 
@@ -298,7 +298,7 @@ const CLAIMS = [
         label: 'item name'
     },
 ]
-console.log('Claims', CLAIMS);
+/* console.log('Claims', CLAIMS); */
 
 const claims = document.getElementsByClassName('claims')[0];
 /* console.log(claims); */
@@ -336,7 +336,7 @@ const STAYDURATION = [
         label: '+31 night',
     },
 ]
-console.log(STAYDURATION);
+/* console.log(STAYDURATION); */
 
 
 const StayDuration = document.getElementsByClassName('duration')[0];
@@ -365,58 +365,49 @@ const HolidaysPackages = [
         id: 1,
         images: "assets/vocation2.jpg",
         holidayTitle: "Best family vocation in USA",
-        packagePrice: "R35000",
+        packagePrice: "$35000",
         packageDescription: "This package is affordable for a family with 2 members only"
     },
     {
         id: 2,
         images: "assets/vocation3.jpg",
         holidayTitle: "Best family vocation in Europe",
-        packagePrice: "Eu35000",
+        packagePrice: "€35000",
         packageDescription: "This package is affordable for a family with 2 members only"
     },
     {
         id: 3,
-        images: "assets/vocation3.jpg",
+        images: "assets/vocation4.jpg",
         holidayTitle: "Best family vocation in Angola",
-        packagePrice: "5300000AOA",
+        packagePrice: "53000AOA",
         packageDescription: "This package is affordable for a family with 4 members only"
     },
 ]
 
 const myPackages = document.querySelector(".myPackages")
-console.log("div", myPackages);
-
+/* console.log("div", myPackages);
+ */
 const showInHtml = HolidaysPackages.map((packagesItem, index) => {
     return `
-            <div class="card-products">
-            <img class="img" src="${packagesItem.images}" id="images" alt="">
-            
-            <div class="package-title">
-            <h2>${packagesItem.holidayTitle}</h2>
-            </div>
+    <div class="card-offer" 
+        <p></p>
+        <img class="img" src="${packagesItem.images}" id="images" alt="">
+        <div class="text">
+        <p class="offer-price">   ${packagesItem.packagePrice}</p>
+        <br/>
+        <h2>${packagesItem.holidayTitle}</h2>
+        </div>
+    </div> 
 
-            <!-- Package price -->
-            <div class="package-price">
-            <p>${packagesItem.packagePrice}</p>
-            </div>
-            <!-- End Package price -->
-            
-            <!-- Package description -->
-            <div class="package-description">
-            <p>${packagesItem.packageDescription}</p>
-            </div>
-            <!-- End Package description -->
-            </div>
- `
+    `
 })
 
 myPackages.innerHTML = showInHtml;
-console.log(showInHtml);
+/* console.log(showInHtml); */
 /* End Product Offers */
 
 
 /*Merge apartmentType array and HolidaysPackages array*/
 
-const merge = [...new Set([...apartmentType, ...HolidaysPackages, ...STAYDURATION, ...houseTypes])];
+const merge = [...new Set([...apartmentType, ...apartmentType, ...HolidaysPackages, ...STAYDURATION, ...houseTypes])];
 console.log("Merged arrays", merge);

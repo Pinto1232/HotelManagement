@@ -117,6 +117,7 @@ body {
     background-size: cover;
     height: 550px;
     position: relative;
+    background-color: red;
 }
 
 .hotel-bg .header {
@@ -352,6 +353,7 @@ body {
     padding: 11px;
     background-color: #38414d;
     color: white;
+    text-transform: capitalize;
 }
 
 /* End Line row */
@@ -877,7 +879,7 @@ body {
     color: white;
     margin-top: 60px;
     max-width: 100%;
-    border-radius: 4px;
+    border: none;
 
 }
 
@@ -918,78 +920,146 @@ body {
 
 .headers h2 {
     color: #001f5b;
-    font-size: 40px;
+    font-size: 30px;
     text-transform: capitalize;
     font-weight: 800;
 }
 
-.product-offers .card-products {
-    background-color: white;
-    width: 300px;
-    height: 465px;
+
+
+.card-offer {
     box-shadow: 0 0px 9px 2px rgba(181, 181, 181, 0.202), 0 1px 1px -5px rgba(157, 157, 157, 0.309);
-}
-
-.product-offers img {
-    position: static;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -999;
-    cursor: pointer;
-    transition: .45s ease all;
-    background-size: 175%;
-}
-
-.product-offers img:hover {
-    transition: transform all 200ms rgba(181, 181, 181, 0.202);
-    background-size: 175%;
-}
-
-.card-products {
-    overflow: hidden;
     position: relative;
-}
-
-
-/* To be revisited */
-.card-products .package-title {
-    text-align: center;
-    margin-bottom: 8em;
+    background-size: cover;
     width: 300px;
-    padding: 10px;
-    text-transform: capitalize;
-    display: none;
-
+    height: 441px;
+    display: inline-block;
+    margin: 10px;
+    overflow: hidden;
 }
 
 
-/* To be revisited */
-.card-products .package-price {
-    margin-bottom: 6em;
-    text-align: center;
-    font-weight: 300;
+
+
+.card-offer .text {
+    max-width: 100%;
+    font-size: 0px;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 100;
+    transition: all 0.3s ease-out;
+    font-size: 20px;
+    font-weight: lighter;
+    opacity: 1;
+    padding-right: 10px;
+}
+
+.card-offer::before {
+    content: '';
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+    border-left-color: transparent;
+    border: 140px solid #fff;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    opacity: 0.2;
+    pointer-events: none;
+    transition: all 0.3s linear;
+}
+
+.card-offer::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-100%);
+    border: 120px solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    pointer-events: none;
+    opacity: 0.2;
+    transition: all 0.3s linear;
+}
+
+
+.card-offer:hover::after {
+    border-top-color: #000;
+    border-right-color: #000;
+    opacity: 0.3;
+    border-width: 220px;
+}
+
+.card:hover::before {
+    border-width: 0;
+    opacity: 0;
+}
+
+.card-offer:hover .text {
+    opacity: 1;
+}
+
+/* End Product card */
+
+
+/* Get a quote */
+.getQuote .container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 2em;
-    margin-right: 2em;
-    padding: 8px;
-    background-color: #001f5b;
+    flex-direction: column;
+    background-color: #38414d;
+    margin-bottom: 50px;
+    padding: 5em;
+}
+
+.getQuote h2 {
     color: white;
+    font: 700;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.getQuote p {
+    color: white;
+    margin-bottom: 2em;
+}
+
+.getQuote .quote-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+    color: white;
+    gap: 20px;
+}
+
+.quote-content a {
+    text-decoration: none;
+    font-weight: 400;
     border-radius: 2px;
-    display: none;
+    border: 1px solid white;
+    color: white;
 }
 
-
-/* To be revisited */
-.card-products .package-description {
-    text-align: center;
-    width: 300px;
-    padding: 10px;
-    display: none;
+.btn-quote {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    cursor: pointer;
 }
 
+.btn-extra {
+    background-color: #001f5b !important;
+    border: #001f5b !important;
+    color: white !important;
+}
 
-
-
-/* End Product card */
+/* End Get a quote */
