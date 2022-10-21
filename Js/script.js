@@ -407,7 +407,107 @@ myPackages.innerHTML = showInHtml;
 /* End Product Offers */
 
 
-/*Merge apartmentType array and HolidaysPackages array*/
 
-const merge = [...new Set([...apartmentType, ...apartmentType, ...HolidaysPackages, ...STAYDURATION, ...houseTypes])];
+/* Array of countries */
+const ALL_COUNTRIES = [
+    {
+        id:0,
+        contryName: "Angola",
+        population: "32,000 000",
+        provincies: "18",
+        president: "Joao lourenco",
+        languages: "20",
+        imgFlag: "assets/Angola_flag.png",
+        currencyName: "kwanza",
+        short_video: "",
+    },
+    {
+        id:1,
+        contryName: "South Africa",
+        population: "50,000 000",
+        provincies: "18",
+        president: "Joao lourenco",
+        languages: "20",
+        imgFlag: "assets/Angola_flag.png",
+        currencyName: "kwanza",
+        short_video: "",
+    },
+
+    {
+        id:2,
+        contryName: "United State of America",
+        population: "78,000 000",
+        provincies: "18",
+        president: "Joao lourenco",
+        languages: "20",
+        imgFlag: "assets/Angola_flag.png",
+        currencyName: "kwanza",
+        short_video: "",
+    },
+    {
+        id:3,
+        contryName: "Brasil",
+        population: "32,000 000",
+        provincies: "18",
+        president: "Joao lourenco",
+        languages: "20",
+        imgFlag: "assets/Angola_flag.png",
+        currencyName: "kwanza",
+        short_video: "",
+    },
+
+    {
+        id:4,
+        contryName: "Portugal",
+        population: "70,000 000",
+        provincies: "18",
+        president: "Joao lourenco",
+        languages: "20",
+        imgFlag: "assets/Angola_flag.png",
+        currencyName: "kwanza",
+        short_video: "",
+    },
+
+    {
+        id:5,
+        contryName: "China",
+        population: "32,000 000",
+        provincies: "18",
+        president: "Joao lourenco",
+        languages: "20",
+        imgFlag: "assets/Angola_flag.png",
+        currencyName: "kwanza",
+        short_video: "",
+    },
+
+    {
+        id:6,
+        contryName: "Spain",
+        population: "32,000 000",
+        provincies: "18",
+        president: "Joao lourenco",
+        languages: "20",
+        imgFlag: "assets/Angola_flag.png",
+        currencyName: "kwanza",
+        short_video: "",
+    },
+    {
+        id:7,
+        contryName: "England",
+        population: "52,000 000",
+        provincies: "18",
+        president: "Joao lourenco",
+        languages: "20",
+        imgFlag: "assets/Angola_flag.png",
+        currencyName: "kwanza",
+        short_video: "",
+    },
+]
+/* console.log('All countries',ALL_COUNTRIES); */
+/* End Array of countries */
+
+
+/*Merge apartmentType array and HolidaysPackages array*/
+const merge = [...new Set([...ALL_COUNTRIES,...apartmentType, ...apartmentType, ...HolidaysPackages, ...STAYDURATION, ...houseTypes])];
 console.log("Merged arrays", merge);
+/* End mergin arrays */

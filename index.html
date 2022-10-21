@@ -453,11 +453,146 @@
           <a class="btn-quote btn-extra" href="#">Get a quote</a>
         </div>
       </quote-content>
-
-
     </div>
   </section>
   <!-- End Get a quote -->
+
+  <!--Multi step form-->
+  <multiple-form id="form_page" class="form">
+    <div class="container">
+      <div class="form-box">
+        <ul class="progress-steps">
+          <li class="step active">
+            <span>1</span>
+            <p>Personal<br><span>25 secs to complete</span></p>
+          </li>
+        </ul>
+
+        <ul class="progress-steps">
+          <li class="step">
+            <span>2</span>
+            <p>Contact<br><span>45 secs to complete</span></p>
+          </li>
+        </ul>
+
+        <ul class="progress-steps">
+          <li class="step">
+            <span>3</span>
+            <p>Security<br><span>60 secs to complete</span></p>
+          </li>
+        </ul>
+      </div>
+      <!-- Form  -->
+      <form action="">
+        <div class="form-one form-step">
+          <div class="bg-svg"></div>
+          <h2>Personal Information</h2>
+          <p>Enter your personal information</p>
+          <div>
+            <label for="">First Name</label>
+            <input type="text" placeholder="e.g John">
+          </div>
+
+          <div>
+            <label for="">First Name</label>
+            <input type="text" placeholder="e.g Paul">
+          </div>
+
+          <div class="birth">
+            <label for="">First Name</label>
+            <div class="grouping">
+              <input type="text" patter="[0-9]*" name="day" value="" min="0" max="31">
+              <input type="text" patter="[0-9]*" name="month" value="" min="0" max="12">
+              <input type="text" patter="[0-9]*" name="year" value="" min="0" max="2050">
+            </div>
+          </div>
+        </div>
+        <!-- Form two -->
+        <div class="form-two form-step">
+          <div class="bg-svg"></div>
+          <h2>Contact</h2>
+          <div>
+            <label>Phone</label>
+            <input type="tel" placeholder="+62xxxxxxxx">
+          </div>
+          <div>
+            <label>Address</label>
+            <input type="text" placeholder="Street Address">
+          </div>
+          <div>
+            <input type="text" placeholder="App, Suit, Building">
+          </div>
+          <div>
+            <label>City</label>
+            <input type="text" placeholder="City">
+          </div>
+          <div>
+            <label>State</label>
+            <input type="text" placeholder="State/Province">
+          </div>
+          <div>
+            <label>Zip Code</label>
+            <input type="text" placeholder="Postal/Zip Code">
+          </div>
+
+          <!-- Dropdown -->
+          <div>
+            <label>Country</label>
+            <select name="country" id="country">
+              <option value="">Please select</option>
+              <option value="Angola">Angola</option>
+              <option value="South Africa">South Africa</option>
+              <option value="United State of America">United State of America</option>
+              <option value="Mozambique">Mozambique</option>
+              <option value="Marocos">Marocos</option>
+              <option value="Namibia">Namibia</option>
+              <option value="Italia">Italia</option>
+              <option value="Italia">Sudan</option>
+              <option value="Italia">Portugal</option>
+              <option value="Italia">France</option>
+            </select>
+          </div>
+          <!-- End Dropdown -->
+          <div class="form-three from-step">
+            <div class="bg-svg"></div>
+            <h2>Security</h2>
+            <div>
+              <label>Email</label>
+              <input type="email" placeholder="Your email address">
+            </div>
+            <div>
+              <label>Username</label>
+              <input type="text" placeholder="Username">
+            </div>
+            <div>
+              <label>Password</label>
+              <input type="password" placeholder="Password">
+            </div>
+            <div>
+              <input type="password" placeholder="Confirm Password">
+            </div>
+            <div class="checkbox">
+              <input type="checkbox">
+              <label>Receive our news letter and special offers</label>
+            </div>
+          </div>
+          <!-- Third form -->
+          <div>
+            <div class="btn-group">
+              <button type="button" class="btn-prev" disabled>Back</button>
+              <button type="button" class="btn-prev">Next Step</button>
+              <button type="button" class="btn-prev">Submit</button>
+            </div>
+          </div>
+          <!-- End Third form -->
+
+        </div>
+        <!-- End of Form two -->
+      </form>
+      <!-- End form -->
+    </div>
+  </multiple-form>
+  <!--End Multi step form-->
 
   <!-- Footer -->
   <section class="footer-section">
