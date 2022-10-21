@@ -418,5 +418,5 @@ console.log(showInHtml);
 
 /*Merge apartmentType array and HolidaysPackages array*/
 
-const merge = [...new Set([...apartmentType, ...HolidaysPackages])];
+const merge = [...new Set([...apartmentType, ...HolidaysPackages, ...STAYDURATION, ...houseTypes])];
 console.log("Merged arrays", merge);
