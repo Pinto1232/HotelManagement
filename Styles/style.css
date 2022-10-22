@@ -617,7 +617,7 @@ body {
     color: #001f5b;
     text-transform: uppercase;
     margin-top: 6px;
-    transition: all 8s ease-in-out;
+    transition: 10s ease-in;
 }
 
 .next-date {
@@ -627,7 +627,7 @@ body {
     gap: 29px;
     color: #001f5b;
     text-transform: uppercase;
-    transition: all 5s ease-in-out;
+    transition: 10s ease-in;
 }
 
 .next-date:hover {
@@ -643,9 +643,6 @@ body {
     transition: all 300ms ease-in-out;
 
 }
-
-
-
 
 
 .weekdays div:hover {
@@ -1071,18 +1068,118 @@ body {
     align-items: center;
     justify-content: center;
 }
- .multi-step-form .container{
+
+.multi-step-form .container {
     width: 530px;
     background-color: white;
     padding: 50px;
-    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
- }
+}
 
- .multi-step-form header{
+.container .form-outer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container .progress-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container .form-outer {
+    width: 100%;
+}
+
+.form-outer form {
+    display: flex;
+    width: 400%;
+}
+
+
+.form-outer form .page {
+    width: 25%;
+}
+
+.form-outer form .page .title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.form-outer form .page .field .label {
+    position: absolute;
+    top: -30px;
+}
+
+.form-outer form .page .field {
+    position: relative;
+}
+
+.multi-step-form header {
     font-size: 25px;
     text-transform: capitalize;
     color: #001f5b;
     margin-bottom: 1em;
- }
+    font-weight: 600;
+}
+
+.page .label {
+    margin-top: 2em;
+}
+
+.field input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    margin-top: 1em;
+    border: none;
+    border-bottom: 1px solid hsla(220, 100%, 18%, 0.386);
+    padding: 1em;
+}
+
+.field button {
+    width: 60%;
+    padding: 13px;
+    gap: 24px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #001f5b;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.form-outer form .btns button .prev {
+    margin-right: 3px;
+    font-size: 17px;
+}
+
+.form-outer form .btns button .next {
+    margin-left: 3px;
+}
+
+.field button:hover {
+    background-color: #38414d;
+    color: white;
+}
+
+.field select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-bottom: 1px solid hsla(220, 100%, 18%, 0.386);
+}
