@@ -1014,7 +1014,6 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: #38414d;
-    margin-bottom: 50px;
     padding: 5em;
 }
 
@@ -1064,6 +1063,26 @@ body {
 
 /* End Get a quote */
 
-/* Multi step form */
 
-/* End Multi step form */
+
+/* Multi step form */
+.multi-step-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .multi-step-form .container{
+    width: 530px;
+    background-color: white;
+    padding: 50px;
+    margin: 10px auto;
+    text-align: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+ }
+
+ .multi-step-form header{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #001f5b;
+    margin-bottom: 1em;
+ }
