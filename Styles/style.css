@@ -128,6 +128,7 @@ body {
     gap: 4px;
 }
 
+
 .header h2 {
     width: 558px;
     margin-top: 13%;
@@ -138,6 +139,12 @@ body {
     font-size: 41px;
     color: #38414d;
     margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .hotel-bg h2{
+        font-size: 100%;
+    }
 }
 
 .header p {
@@ -176,6 +183,12 @@ body {
     justify-content: center;
     background-color: #fff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media (max-width: 768px) {
+    .hotel-bg .colunms .items-block{
+        width: 100%;
+    }
 }
 
 .colunms .items-block {
@@ -437,8 +450,8 @@ body {
     border-radius: 0px;
     cursor: pointer;
     margin-left: -10px;
-    padding-top: 21px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 19px;
     border: none;
     border-radius: 0px 50px 50px 0px;
     text-align: center;
@@ -812,11 +825,24 @@ body {
 /* End Footer  */
 
 /* Offers packages */
+.card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+}
 .offer-packages .container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .offer-packages .container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .offer-packages .container .card-offers {
@@ -832,11 +858,10 @@ body {
 .offer-packages .container .card-offers img {
     width: 100%;
     height: 130px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    object-fit: cover;
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
 }
 
 .offer-packages .container .card-offers h2 {
@@ -906,6 +931,14 @@ body {
     margin-bottom: 4em;
     height: 400px;
     gap: 1px;
+}
+
+@media (max-width: 768px) {
+    .product-offers .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 .product-offers .headers {
@@ -1036,6 +1069,13 @@ body {
     gap: 20px;
 }
 
+@media (max-width: 768px) {
+    .getQuote .quote-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .quote-content a {
     text-decoration: none;
     font-weight: 400;
@@ -1073,16 +1113,21 @@ body {
     width: 530px;
     background-color: white;
     padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 10px auto;
     text-align: center;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
 }
 
+@media (max-width: 768px) {
+    .multi-step-form .container{
+        width: 100%;
+    }
+}
+
+
 .container .form-outer {
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .container .progress-bar{
@@ -1092,9 +1137,22 @@ body {
     gap: 20px;
 }
 
+.container .progress-bar .step{
+   text-align: center;
+   justify-content: center;
+   width: 100%;
+}
+
+.progress-bar .step p{
+   font-weight: 500;
+   font-size: 13px;
+   margin-bottom: 8px;
+}
+
 .container .form-outer {
     width: 100%;
 }
+
 
 .form-outer form {
     display: flex;
@@ -1107,9 +1165,10 @@ body {
 }
 
 .form-outer form .page .title {
-    text-align: center;
-    font-size: 25px;
+    text-align: start;
+    font-size: 19px;
     font-weight: 500;
+    margin-top: 10px;
 }
 
 
@@ -1182,4 +1241,37 @@ body {
     outline: none;
     cursor: pointer;
     border-bottom: 1px solid hsla(220, 100%, 18%, 0.386);
+}
+
+
+.bullet{
+    background-color: #001f5b;
+    color: #fff;
+    border-radius:50%;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.step span{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.progress-bar .step .check{
+    display: none;
+}
+
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet::after{
+    content: '';
+    position: absolute;
+    width: 44px;
+    bottom: 11px;
+    height: 3px;
 }

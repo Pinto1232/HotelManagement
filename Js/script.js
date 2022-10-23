@@ -7,12 +7,12 @@ const apartmentType = [
         size: "2.5 Km",
         price: "2 million",
         description: "Is a well located apartment that stays close to a very luxury area",
+        images: "/assets/home1.jpg",
 
         apartmentCompartment: [
             {
                 id: 0,
                 rooms: "1",
-                images: "/assets/icon.png",
             }
         ]
 
@@ -25,12 +25,12 @@ const apartmentType = [
         size: "4.5 Km",
         price: "2 million",
         description: "If you like to live in a area close to a vibrant night life, here is the right spot",
+        images: "/assets/home2.jpg",
 
         apartmentCompartment: [
             {
                 id: 1,
                 rooms: "2",
-                images: "/assets/icon.png",
             }
         ]
     },
@@ -41,12 +41,12 @@ const apartmentType = [
         size: "2.5 Km",
         price: "5 million",
         description: "Across the sea side, this is a perfect area for your family to live",
+        images: "/assets/home3.jpg",
 
         apartmentCompartment: [
             {
                 id: 2,
                 rooms: "3",
-                images: "/assets/icon.png",
             }
         ]
     },
@@ -57,11 +57,12 @@ const apartmentType = [
         size: "1.5 Km",
         price: "3 million",
         description: "Living in the heal is your thing? Then come and grab this vastiuous luxury apartment with breath taking sight see",
+        images: "/assets/home4.jpg",
 
         apartmentCompartment: [
             {
                 id: 3,
-                images: "/assets/icon.png",
+                rooms: "4",
             }
         ]
     },
@@ -72,14 +73,65 @@ const apartmentType = [
         size: "2.5 Km",
         price: "2 million",
         description: "A well spacious 2 bedroom apartiment close to a new developed urban infrastructure",
+        images: "/assets/home5.jpg",
 
         apartmentCompartment: [
             {
                 id: 4,
-                images: "/assets/icon.png",
+                rooms: "4",
             }
         ]
-    }
+    },
+    {
+        id: 5,
+        name: "House",
+        area: "Parkland",
+        size: "2.5 Km",
+        price: "2 million",
+        description: "A well spacious 2 bedroom apartiment close to a new developed urban infrastructure",
+        images: "/assets/home6.jpg",
+
+        apartmentCompartment: [
+            {
+                id: 4,
+                rooms: "2",
+            }
+        ]
+    },
+    {
+        id: 6,
+        name: "Master Sweat",
+        area: "Milnerton",
+        size: "2.5 Km",
+        price: "2 million",
+        description: "A well spacious 2 bedroom apartiment close to a new developed urban infrastructure",
+        images: "/assets/home7.jpg",
+
+        apartmentCompartment: [
+            {
+                id: 4,
+                rooms: "2",
+
+            }
+        ]
+    },
+    {
+        id: 5,
+        name: "Penthouse",
+        area: "Parkland",
+        size: "2.5 Km",
+        price: "2 million",
+        description: "A well spacious 2 bedroom apartiment close to a new developed urban infrastructure",
+        images: "/assets/home8.jpg",
+
+        apartmentCompartment: [
+            {
+                id: 4,
+                rooms: "3",
+
+            }
+        ]
+    },
 ];
 
 
@@ -390,10 +442,10 @@ const myPackages = document.querySelector(".myPackages")
 const showInHtml = HolidaysPackages.map((packagesItem, index) => {
     return `
     <div class="card-offer" 
-        <p></p>
+        <span></span>
         <img class="img" src="${packagesItem.images}" id="images" alt="">
         <div class="text">
-        <p class="offer-price">   ${packagesItem.packagePrice}</p>
+        <p class="offer-price"> Price - ${packagesItem.packagePrice}</p>
         <br/>
         <h2>${packagesItem.holidayTitle}</h2>
         </div>
@@ -406,13 +458,48 @@ myPackages.innerHTML = showInHtml;
 /* console.log(showInHtml); */
 /* End Product Offers */
 
+const ApartmentDescription = document.querySelector(".card-holder");
+console.log(ApartmentDescription);
+
+const showApatmentHtml = apartmentType.map((apartmentItem, index) => {
+    return `
+            <div class="card-offers">
+                <img src="${apartmentItem.images}" alt="image-package" />
+                <h3>${apartmentItem.name}</h3>
+                <h2>${apartmentItem.area}</h2>
+            <div class="card-content">
+            <div class="tinyheading">
+                <p>Price - ${apartmentItem.price}</p>
+                <span>Size - ${apartmentItem.size}</span>
+                <p>${apartmentItem.description}</p>
+            </div>
+            <div class="buy-now">
+                <a class="btn-buy-now" href="#">Check Now</a>
+                <span class="stars">
+                <div class="rating-text">
+                    <p>rating</p>
+                </div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                </span>
+            </div>
+            </div>
+            </div>
+
+    `
+})
+ApartmentDescription.innerHTML = showApatmentHtml;
+
+
 
 
 /* Array of countries */
 const ALL_COUNTRIES = [
     {
         id: 0,
-        contryName: "Angola",
+        countryName: "Angola",
         population: "32,000 000",
         provincies: "18",
         president: "João Lourenço",
@@ -423,7 +510,7 @@ const ALL_COUNTRIES = [
     },
     {
         id: 1,
-        contryName: "South Africa",
+        countryName: "South Africa",
         population: "50,000 000",
         provincies: "18",
         president: "Cyril Ramaphosa",
@@ -435,7 +522,7 @@ const ALL_COUNTRIES = [
 
     {
         id: 2,
-        contryName: "United State of America",
+        countryName: "United State of America",
         population: "78,000 000",
         provincies: "18",
         president: "John Biden",
@@ -446,7 +533,7 @@ const ALL_COUNTRIES = [
     },
     {
         id: 3,
-        contryName: "Brasil",
+        countryName: "Brasil",
         population: "32,000 000",
         provincies: "18",
         president: "Jair Bolsonaro",
@@ -458,7 +545,7 @@ const ALL_COUNTRIES = [
 
     {
         id: 4,
-        contryName: "Portugal",
+        countryName: "Portugal",
         population: "70,000 000",
         provincies: "18",
         president: "Marcelo Ribeiro",
@@ -470,7 +557,7 @@ const ALL_COUNTRIES = [
 
     {
         id: 5,
-        contryName: "China",
+        countryName: "China",
         population: "32,000 000",
         provincies: "18",
         president: "Xii Jin Ping",
@@ -482,7 +569,7 @@ const ALL_COUNTRIES = [
 
     {
         id: 6,
-        contryName: "Spain",
+        countryName: "Spain",
         population: "32,000 000",
         provincies: "18",
         president: "Pedro Sánchez",
@@ -493,7 +580,7 @@ const ALL_COUNTRIES = [
     },
     {
         id: 7,
-        contryName: "England",
+        countryName: "England",
         population: "52,000 000",
         provincies: "18",
         president: "Elizabeth Truss",
