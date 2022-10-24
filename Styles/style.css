@@ -139,6 +139,7 @@ body {
     font-size: 41px;
     color: #38414d;
     margin-bottom: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -247,6 +248,10 @@ body {
 .mega-search .tiny-header {
     color: #38414d52;
     padding-top: 8px;
+}
+
+.tinyheading p {
+    margin-bottom: 18px;
 }
 
 .dropdown-menu {
@@ -484,6 +489,7 @@ body {
     z-index: 999;
 }
 
+
 .modal-container.show {
     pointer-events: auto;
     opacity: 1;
@@ -580,6 +586,7 @@ body {
 }
 
 /*End Modal */
+
 
 
 /* Calendar */
@@ -849,7 +856,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 350px;
-    /* height: 500px; */
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     margin-bottom: 10px;
     border-radius: 4px;
@@ -861,35 +867,36 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     object-fit: cover;
-    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); 
+}
+
+.price-size-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .offer-packages .container .card-offers h2 {
     text-align: start;
-    padding: 10px;
+    padding: 16px;
 }
 
 
 .offer-packages .container .card-offers h3 {
+    padding-left: 16px;
     text-align: start;
-    padding: 10px;
-    color: #38414d;
+    color: #001f5b;
     font-weight: 900;
     text-transform: uppercase;
     line-height: 1.2;
-    font: 900;
     font-size: 15px;
+    padding-top: 26px;
 }
 
 .offer-packages .container .card-offers .card-content {
-    padding: 10px;
+    padding: 16px;
 }
 
-.buy-now {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
 
 .offer-packages .buy-now a {
     display: inline-flex;
@@ -899,7 +906,6 @@ body {
     padding: 10px;
     text-decoration: none;
     color: white;
-    margin-top: 60px;
     max-width: 100%;
     border: none;
 
@@ -1275,3 +1281,4 @@ body {
     bottom: 11px;
     height: 3px;
 }
+

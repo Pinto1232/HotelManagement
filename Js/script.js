@@ -212,7 +212,8 @@ searchClose.addEventListener('click', () => {
 /* End Search modal */
 
 
-/* Sub-links */
+
+
 const about_links = [
     {
         id: 0,
@@ -459,7 +460,7 @@ myPackages.innerHTML = showInHtml;
 /* End Product Offers */
 
 const ApartmentDescription = document.querySelector(".card-holder");
-console.log(ApartmentDescription);
+
 
 const showApatmentHtml = apartmentType.map((apartmentItem, index) => {
     return `
@@ -469,9 +470,11 @@ const showApatmentHtml = apartmentType.map((apartmentItem, index) => {
                 <h2>${apartmentItem.area}</h2>
             <div class="card-content">
             <div class="tinyheading">
-                <p>Price - ${apartmentItem.price}</p>
-                <span>Size - ${apartmentItem.size}</span>
                 <p>${apartmentItem.description}</p>
+                <div class="price-size-description">
+                   <p>Price - ${apartmentItem.price}</p>
+                   <p>Size - ${apartmentItem.size}</p>
+                </div>
             </div>
             <div class="buy-now">
                 <a class="btn-buy-now" href="#">Check Now</a>
@@ -491,8 +494,6 @@ const showApatmentHtml = apartmentType.map((apartmentItem, index) => {
     `
 })
 ApartmentDescription.innerHTML = showApatmentHtml;
-
-
 
 
 /* Array of countries */
