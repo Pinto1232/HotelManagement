@@ -913,6 +913,7 @@ body {
     color: white;
     max-width: 100%;
     border: none;
+    border-radius: 6px;
 
 }
 
