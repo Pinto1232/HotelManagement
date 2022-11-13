@@ -143,7 +143,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .hotel-bg h2{
+    .hotel-bg h2 {
         font-size: 100%;
     }
 }
@@ -187,7 +187,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .hotel-bg .colunms .items-block{
+    .hotel-bg .colunms .items-block {
         width: 100%;
     }
 }
@@ -838,6 +838,7 @@ body {
     justify-content: center;
     gap: 3px;
 }
+
 .offer-packages .container {
     display: flex;
     align-items: center;
@@ -867,18 +868,19 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     object-fit: cover;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.price-size-description{
+.price-size-description {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.price-size-description p:nth-child(2){
-  text-decoration: underline;
+.price-size-description p:nth-child(2) {
+    text-decoration: underline;
 }
+
 .offer-packages .container .card-offers h2 {
     text-align: start;
     padding: 16px;
@@ -943,7 +945,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .product-offers .container{
+    .product-offers .container {
         display: flex;
         flex-direction: column;
         height: auto;
@@ -1079,7 +1081,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .getQuote .quote-content{
+    .getQuote .quote-content {
         display: flex;
         flex-direction: column;
     }
@@ -1128,7 +1130,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .multi-step-form .container{
+    .multi-step-form .container {
         width: 100%;
     }
 }
@@ -1136,26 +1138,26 @@ body {
 
 .container .form-outer {
     width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-.container .progress-bar{
+.container .progress-bar {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-.container .progress-bar .step{
-   text-align: center;
-   justify-content: center;
-   width: 100%;
+.container .progress-bar .step {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.progress-bar .step p{
-   font-weight: 500;
-   font-size: 13px;
-   margin-bottom: 8px;
+.progress-bar .step p {
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 8px;
 }
 
 .container .form-outer {
@@ -1253,10 +1255,10 @@ body {
 }
 
 
-.bullet{
+.bullet {
     background-color: #001f5b;
     color: #fff;
-    border-radius:50%;
+    border-radius: 50%;
     width: 25px;
     height: 25px;
     margin-top: 10px;
@@ -1266,18 +1268,18 @@ body {
     margin-bottom: 10px;
 }
 
-.step span{
+.step span {
     font-weight: 500;
     font-size: 17px;
     line-height: 25px;
 }
 
-.progress-bar .step .check{
+.progress-bar .step .check {
     display: none;
 }
 
 .progress-bar .step .bullet:before,
-.progress-bar .step .bullet::after{
+.progress-bar .step .bullet::after {
     content: '';
     position: absolute;
     width: 44px;
@@ -1287,42 +1289,11 @@ body {
 
 
 /* Grid template */
-.grid-templates{
+.grid-templates {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 1em;
-}
-.my-article:nth-child(1){
-    background-color: red;
-    height: 250px;
-    text-align: center;
-}
-
-.my-article:nth-child(2){
-    background-color: rgb(21, 0, 255);
-    height: 250px;
-    text-align: center;
-}
-
-.my-article:nth-child(3){
-    background-color: rgb(0, 174, 255);
-    height: 250px;
-    text-align: center;
-}
-
-.my-article:nth-child(4){
-    background-color: rgb(255, 255, 0);
-    height: 250px;
-    text-align: center;
-}
-
-.my-article:nth-child(5){
-    background-color: rgb(255, 0, 204);
-    height: 250px;
-    text-align: center;
-}
-.my-article:nth-child(6){
-    background-color: rgb(47, 255, 0);
-    height: 250px;
-    text-align: center;
+    gap: 10px;
+    margin: 20px;
+    margin-top: 6px;
 }
