@@ -116,7 +116,41 @@ const apartmentType = [
         ]
     },
     {
-        id: 5,
+        id: 7,
+        name: "Penthouse",
+        area: "Parkland",
+        size: "2.5 Km",
+        price: "2 million",
+        description: "A well spacious 2 bedroom apartiment close to a new developed urban infrastructure",
+        images: "/assets/home8.jpg",
+
+        apartmentCompartment: [
+            {
+                id: 4,
+                rooms: "3",
+
+            }
+        ]
+    },
+    {
+        id: 8,
+        name: "Penthouse",
+        area: "Parkland",
+        size: "2.5 Km",
+        price: "2 million",
+        description: "A well spacious 2 bedroom apartiment close to a new developed urban infrastructure",
+        images: "/assets/home8.jpg",
+
+        apartmentCompartment: [
+            {
+                id: 4,
+                rooms: "3",
+
+            }
+        ]
+    },
+    {
+        id: 8,
         name: "Penthouse",
         area: "Parkland",
         size: "2.5 Km",
