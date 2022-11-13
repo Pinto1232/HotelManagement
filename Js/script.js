@@ -451,7 +451,6 @@ const showInHtml = HolidaysPackages.map((packagesItem, index) => {
         <h2>${packagesItem.holidayTitle}</h2>
         </div>
     </div> 
-
     `
 })
 
@@ -460,7 +459,6 @@ myPackages.innerHTML = showInHtml;
 /* End Product Offers */
 
 const ApartmentDescription = document.querySelector(".card-holder");
-
 
 const showApatmentHtml = apartmentType.map((apartmentItem, index) => {
     return `

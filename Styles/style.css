@@ -117,7 +117,7 @@ body {
     background-size: cover;
     height: 550px;
     position: relative;
-    background-color: red;
+    background-color: #001f5b;
 }
 
 .hotel-bg .header {
@@ -876,6 +876,9 @@ body {
     justify-content: space-between;
 }
 
+.price-size-description p:nth-child(2){
+  text-decoration: underline;
+}
 .offer-packages .container .card-offers h2 {
     text-align: start;
     padding: 16px;
@@ -1282,3 +1285,44 @@ body {
     height: 3px;
 }
 
+
+/* Grid template */
+.grid-templates{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 1em;
+}
+.my-article:nth-child(1){
+    background-color: red;
+    height: 250px;
+    text-align: center;
+}
+
+.my-article:nth-child(2){
+    background-color: rgb(21, 0, 255);
+    height: 250px;
+    text-align: center;
+}
+
+.my-article:nth-child(3){
+    background-color: rgb(0, 174, 255);
+    height: 250px;
+    text-align: center;
+}
+
+.my-article:nth-child(4){
+    background-color: rgb(255, 255, 0);
+    height: 250px;
+    text-align: center;
+}
+
+.my-article:nth-child(5){
+    background-color: rgb(255, 0, 204);
+    height: 250px;
+    text-align: center;
+}
+.my-article:nth-child(6){
+    background-color: rgb(47, 255, 0);
+    height: 250px;
+    text-align: center;
+}
