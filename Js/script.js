@@ -169,84 +169,12 @@ const apartmentType = [
 ];
 
 
-/* Types of infrastructure */
-const houseTypes = [
-    {
-        id: 0,
-        typeofHouse: "apartment",
-    },
-    {
-        id: 1,
-        typeofHouse: "Single bedroom",
-    },
-    {
-        id: 2,
-        typeofHouse: "double bedroom ",
-    },
-    {
-        id: 3,
-        typeofHouse: "House",
-    },
-    {
-        id: 4,
-        typeofHouse: "Pent House",
-    },
-]
-
-const apartTypes = document.getElementsByClassName('apart_types')[0]
-/* console.log("Apartment", apartTypes); */
-
-
-houseTypes.forEach((product, index) => {
-    let itemP = document.createElement('a');
-    let itemText = document.createTextNode(product.typeofHouse);
-    itemP.appendChild(itemText);
-    apartTypes.appendChild(itemP)
-});
 
 
 
 /* apartmentType.forEach(element => {
     console.log(element);
 }); */
-
-
-/* Modal */
-const open = document.getElementById('open');
-const modal_container = document.getElementById('modal_container');
-const close = document.getElementById('close');
-
-
-
-open.addEventListener('click', () => {
-    modal_container.classList.add('show');
-})
-
-close.addEventListener('click', () => {
-    modal_container.classList.remove('show');
-})
-
-
-/* Search modal */
-const btnSearchOpen = document.getElementById('btn-search-open');
-const megaSearchContainer = document.getElementById('mega_search_container');
-const searchClose = document.getElementById('close_search');
-
-/* console.log("btn Open", btnSearchOpen);
-console.log("search container", megaSearchContainer);
-console.log("search close", searchClose); */
-
-btnSearchOpen.addEventListener('click', () => {
-    megaSearchContainer.classList.add('show');
-})
-
-searchClose.addEventListener('click', () => {
-    megaSearchContainer.classList.remove('show')
-})
-/* End Search modal */
-
-
-
 
 const about_links = [
     {
@@ -494,7 +422,7 @@ myPackages.innerHTML = showInHtml;
 
 const ApartmentDescription = document.querySelector(".card-holder");
 
-const showApatmentHtml = apartmentType.map((apartmentItem, index) => {
+const showApatmentHtml = apartmentType.slice(0,8).map((apartmentItem, index) => {
     return `
             <div class="card-offers">
                 <img src="${apartmentItem.images}" alt="image-package" />
@@ -526,7 +454,7 @@ const showApatmentHtml = apartmentType.map((apartmentItem, index) => {
     `
 })
 ApartmentDescription.innerHTML = showApatmentHtml;
-
+/* console.log(ApartmentDescription); */
 
 /* Array of countries */
 const ALL_COUNTRIES = [
@@ -628,6 +556,6 @@ const ALL_COUNTRIES = [
 
 
 /*Merge apartmentType array and HolidaysPackages array*/
-const merge = [...new Set([...ALL_COUNTRIES, ...apartmentType, ...apartmentType, ...HolidaysPackages, ...STAYDURATION, ...houseTypes])];
+const merge = [...new Set([...ALL_COUNTRIES, ...apartmentType, ...apartmentType, ...HolidaysPackages, ...STAYDURATION])];
 console.log("Merged arrays", merge);
 /* End mergin arrays */
