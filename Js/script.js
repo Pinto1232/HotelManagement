@@ -371,28 +371,28 @@ STAYDURATION.forEach((durationItem, index) => {
 const HolidaysPackages = [
     {
         id: 0,
-        images: "assets/vocation1.jpg",
+        images: "../assets/vocation1.jpg",
         holidayTitle: "Best family vocation in South Africa",
         packagePrice: "R35000",
         packageDescription: "This package is affordable for a family with 3 members only"
     },
     {
         id: 1,
-        images: "assets/vocation2.jpg",
+        images: "../assets/vocation2.jpg",
         holidayTitle: "Best family vocation in USA",
         packagePrice: "$35000",
         packageDescription: "This package is affordable for a family with 2 members only"
     },
     {
         id: 2,
-        images: "assets/vocation3.jpg",
+        images: "../assets/vocation3.jpg",
         holidayTitle: "Best family vocation in Europe",
         packagePrice: "€35000",
         packageDescription: "This package is affordable for a family with 2 members only"
     },
     {
         id: 3,
-        images: "assets/vocation4.jpg",
+        images: "../assets/vocation4.jpg",
         holidayTitle: "Best family vocation in Angola",
         packagePrice: "53000AOA",
         packageDescription: "This package is affordable for a family with 4 members only"
