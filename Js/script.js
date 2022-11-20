@@ -1,4 +1,3 @@
-/* Apartment types */
 const apartmentType = [
     {
         id: 0,
