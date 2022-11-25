@@ -1,3 +1,245 @@
-.about-bg{
-    height: 370px;
+.about_banner-image {
+  height: 472px;
 }
+
+
+.about_banner-image {
+  background-image: url("../assets/home1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #001f5b;
+}
+
+.main_content_banner .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 22em;
+}
+
+.content h2 {
+  padding-top: 1em;
+  font-size: 50px;
+  font-weight: 700;
+  font: bold;
+}
+
+.content .inner_content {
+  display: flex;
+  column-gap: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+
+
+/* Content */
+.main-content {
+  padding: 5rem;
+  background-color: white;
+}
+
+.main-content .text_header_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text_header_content .tiny_title {
+  color: #001f5b;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.text_header_content h2 {
+  font-size: 58px;
+  font-weight: bold;
+  line-height: 1.2;
+  width: 481px;
+  color: #001f5b;
+  margin-bottom: 30px;
+}
+
+.text_header_content p {
+  line-height: 1.8;
+  color: #6d6d6d;
+  font-size: 13px;
+  width: 620px;
+}
+
+.main-content .header-content {
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 60px;
+}
+
+.full-width-img {
+  display: flex;
+  column-gap: 12px;
+  margin-bottom: 10px;
+}
+
+.full-width-img img {
+  max-width: 100%;
+}
+
+.text_header_content a {
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  width: 200px;
+  padding: 8px;
+  font-size: 14px;
+  margin-top: 17px;
+  background-color: #001f5b;
+  color: white;
+  cursor: pointer;
+}
+
+.text_header_content a:hover {
+  background-color: #000;
+  color: white;
+}
+
+.alone_images img {
+  min-height: 100px;
+  height: 450px;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text_header_content {
+    margin-bottom: 20px;
+  }
+
+  .alone_images img {
+    height: 100%;
+  }
+}
+
+/* End Content */
+
+
+/* Cards block */
+.section_image_holder {
+  padding: 5rem;
+  background-image: url("https://www.liveabout.com/thmb/hqlZIc8LU-ANBpDVn7O22J5NVEo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/front_desk-960555428-5bae87d84cedfd00269b2b8c.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 14rem;
+}
+
+.container .content_text {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container .tiny_title {
+  color: white;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.container h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  width: 400px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.card_block_main {
+  display: flex;
+  gap: 20px;
+}
+
+.card_block_main span {
+  align-items: center;
+  position: relative;
+  margin-top: 5em;
+  background-color: #001f5b;
+  width: 100px;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.card_block_main .card_block {
+  background-color: white;
+  padding: 10px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card_block .icons {
+  background-color: #001f5b;
+  border-radius: 50%;
+  width: 50px;
+  min-height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.card_block h3 {
+  margin-top: 10px;
+  font-size: 15px;
+  width: 150px;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.card_block p {
+  line-height: 1.3;
+  color: #6d6d6d;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card_block_main {
+    overflow-x: auto;
+
+  }
+
+}
+
+/* End Cards block */
+
+
+/* Caroulse */
+.section_card_holder {
+  padding: 6rem;
+  padding-bottom: 14rem;
+  background-color: #38414d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5em;
+}
+
+
+/* End Caroulse */

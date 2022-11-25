@@ -214,114 +214,113 @@ about_links.forEach((links, index) => {
 
 
 
-/* Investors array */
-const INVESTOR_links = [
+/* CONTACT US array */
+const CONTACT_US = [
     {
         id: 0,
-        label: "Item name"
+        label: "Rooms"
     },
     {
         id: 1,
-        label: "Item name"
+        label: "Blog"
     },
     {
         id: 2,
-        label: "Item name"
+        label: "Gift card"
     },
     {
         id: 3,
-        label: "Item name"
+        label: "Services"
     },
     {
         id: 4,
-        label: "Item name"
+        label: "Testimonials"
     },
 ]
-/* console.log(INVESTOR_links); */
 
-const InvestorsLink = document.getElementsByClassName('InvestorsLink')[0];
-/* console.log('Investor', InvestorsLink); */
+const contact_us = document.getElementsByClassName('InvestorsLink')[0];
+/* console.log('LINKS CONTACT US', contact_us); */
 
-INVESTOR_links.forEach((invest_product, index) => {
+CONTACT_US.forEach((invest_product, index) => {
     let InvestorP = document.createElement('a');
     let InvestorText = document.createTextNode(invest_product.label);
     InvestorP.appendChild(InvestorText);
-    InvestorsLink.appendChild(InvestorP)
+    contact_us.appendChild(InvestorP)
 })
 /* End Investors array */
 
 
-/* Help Resources */
-const HELP_RESOURCES = [
+/* Location LINK */
+const LOCATIONS = [
     {
         id: 0,
-        label: 'item name',
+        label: 'Cape Town',
     },
     {
         id: 1,
-        label: 'item name',
+        label: 'Mont Real',
     },
     {
         id: 2,
-        label: 'item name',
+        label: 'Luanda',
     },
     {
         id: 3,
-        label: 'item name',
+        label: 'Rio de Jaineiro',
     },
     {
         id: 4,
-        label: 'item name',
+        label: 'Florida',
     },
 ]
 
 /* console.log('Help resources', HELP_RESOURCES); */
-const help_resources = document.getElementsByClassName('helpResources')[0];
+const locations = document.getElementsByClassName('helpResources')[0];
 /* console.log(help_resources); */
 
-HELP_RESOURCES.forEach((resourceItems, index) => {
+LOCATIONS.forEach((resourceItems, index) => {
     let resourcesP = document.createElement('a');
     let resourceText = document.createTextNode(resourceItems.label);
     resourcesP.appendChild(resourceText);
-    help_resources.appendChild(resourcesP);
+    locations.appendChild(resourcesP);
 })
 /* End Help Resources */
 
 
 
 /* Claims */
-const CLAIMS = [
+const PAYMENTS_METHODS = [
     {
         id: 0,
-        label: 'item name'
+        label: 'Visa'
     },
     {
         id: 1,
-        label: 'item name'
+        label: 'Master Card'
     },
     {
         id: 2,
-        label: 'item name'
+        label: 'Paypal'
     },
     {
         id: 3,
-        label: 'item name'
+        label: 'PayYou'
     },
     {
         id: 4,
-        label: 'item name'
+        label: 'EFT'
     },
 ]
 /* console.log('Claims', CLAIMS); */
 
-const claims = document.getElementsByClassName('claims')[0];
+const payment_method = document.getElementsByClassName('claims')[0];
 /* console.log(claims); */
 
-CLAIMS.forEach((claimsItem, index) => {
+PAYMENTS_METHODS.forEach((claimsItem, index) => {
     let claimsP = document.createElement('a');
     let claimsText = document.createTextNode(claimsItem.label);
     claimsP.appendChild(claimsText);
-    claims.appendChild(claimsP);
+    payment_method.appendChild(claimsP);
 })
 /* End Claims */
 
@@ -399,9 +398,9 @@ const HolidaysPackages = [
 ]
 
 const myPackages = document.querySelector(".myPackages")
-/* console.log("div", myPackages);
- */
-const showInHtml = HolidaysPackages.map((packagesItem, index) => {
+
+/* Packages component */
+const showInHtml = HolidaysPackages.slice(0, 8).map((packagesItem, index) => {
     return `
     <div class="card-offer" 
         <span></span>
@@ -421,7 +420,7 @@ myPackages.innerHTML = showInHtml;
 
 const ApartmentDescription = document.querySelector(".card-holder");
 
-const showApatmentHtml = apartmentType.slice(0,8).map((apartmentItem, index) => {
+const showApatmentHtml = apartmentType.slice(0, 12).map((apartmentItem, index) => {
     return `
             <div class="card-offers">
                 <img src="${apartmentItem.images}" alt="image-package" />
@@ -558,3 +557,39 @@ const ALL_COUNTRIES = [
 const merge = [...new Set([...ALL_COUNTRIES, ...apartmentType, ...apartmentType, ...HolidaysPackages, ...STAYDURATION])];
 console.log("Merged arrays", merge);
 /* End mergin arrays */
+
+
+/* Types of infrastructure */
+const houseTypes = [
+    {
+        id: 0,
+        typeofHouse: "apartment",
+    },
+    {
+        id: 1,
+        typeofHouse: "Single bedroom",
+    },
+    {
+        id: 2,
+        typeofHouse: "double bedroom ",
+    },
+    {
+        id: 3,
+        typeofHouse: "House",
+    },
+    {
+        id: 4,
+        typeofHouse: "Pent House",
+    },
+]
+
+const apartTypes = document.getElementsByClassName('apart_types')[0]
+/* console.log("Apartment", apartTypes); */
+
+
+houseTypes.forEach((product, index) => {
+    let itemP = document.createElement('a');
+    let itemText = document.createTextNode(product.typeofHouse);
+    itemP.appendChild(itemText);
+    apartTypes.appendChild(itemP)
+});
